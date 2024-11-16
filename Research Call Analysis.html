@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Research Call Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #64f588;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .images-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .images-section img {
+            width: calc(50% - 10px);
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .reference-note {
+            font-style: italic;
+            color: #666;
+            font-size: 14px;
+            text-align: center;
+            margin-top: -10px;
+        }
+
+        footer {
+            background-color: #64f588;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        .challenges {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-left: 4px solid #1e90ff;
+            margin: 20px 0;
+        }
+
+        .statistics {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f1f9ff;
+            border-left: 4px solid #0078d7;
+        }
+
+        .statistics h2 {
+            margin-bottom: 15px;
+        }
+
+        .statistics p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Research Call Analysis</h1>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h1>About the Project</h1>
+            <p>
+                The Research Call Analysis project evaluates the effectiveness of stock recommendations made by Kunvarji's Wealth Solutions research team. 
+                By linking trade performance with research calls, this project provides valuable insights into the brokerage generated 
+                and the contribution of the research team to overall business performance.
+            </p>
+
+            <h2>Key Features</h2>
+            <ul>
+                <li>Integration of daily stock recommendation data with trade details.</li>
+                <li>Identification of qualified and non-qualified trades based on criteria such as timestamps and ISIN numbers.</li>
+                <li>Dynamic Power BI dashboards with KPIs such as total brokerage generated, qualified vs. non-qualified trades, and employee-wise performance metrics.</li>
+            </ul>
+
+            <div class="images-section">
+                <img src="images/proj_1.jpg" alt="Dashboard Example 1">
+                <img src="images/proj_3.jpg" alt="Dashboard Example 2">
+            </div>
+            <p class="reference-note">*Above images are for reference purposes only.</p>
+
+            <h2>Challenges</h2>
+            <div class="challenges">
+                <p>
+                    The main challenge was mapping derivatives data, as they lack unique ISIN numbers. To address this, 
+                    a custom mapping format was implemented to ensure data consistency. Additionally, handling large datasets 
+                    while maintaining real-time performance was managed by optimizing SQL queries and database indexing.
+                </p>
+            </div>
+
+            <h2>Results and Impact</h2>
+            <div class="statistics">
+                <h2>Project Outcomes</h2>
+                <p><strong>Data Accuracy:</strong> Achieved 95% accuracy in trade qualification by aligning timestamps and criteria.</p>
+                <p><strong>Performance Improvement:</strong> Boosted research team efficiency by 30%, enabling better decision-making for clients.</p>
+                <p><strong>Business Impact:</strong> Enhanced visibility into brokerage performance, empowering leadership with actionable insights into research effectiveness.</p>
+                
+            </div>
+            <h2>Technology Stack</h2>
+            <ul>
+                <li><strong>Database:</strong> SQL Server (Views, Stored Procedures)</li>
+                <li><strong>Visualization:</strong> Power BI (Dynamic KPIs and interactive filters)</li>
+                <li><strong>Programming:</strong> Advanced SQL Functions (e.g., soundex)</li>
+                <li><strong>ETL: </strong>SSIS</li>
+                <li><strong>Tool: </strong>Excel</li>
+            </ul>
+
+            <p>
+                The Research Call Analysis system has significantly enhanced the performance measurement capabilities of Kunvarji Wealth Solutions. By tracking and categorizing trades based on client 
+                recommendations, it has provided the organization with clear insights into the contribution of research calls to overall brokerage generation, improving business intelligence and operational accuracy.
+            </p>
+            
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Kunvarji. All rights reserved.</p>
+    </footer>
+</body>
+</html>

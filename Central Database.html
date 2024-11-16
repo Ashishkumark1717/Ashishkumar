@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Centralized Client Database</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        header {
+            background-color: #09437e;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .images-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .images-section img {
+            width: calc(50% - 10px);
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .reference-note {
+            font-style: italic;
+            color: #666;
+            font-size: 14px;
+            text-align: center;
+            margin-top: -10px;
+        }
+
+        footer {
+            background-color: #09437e;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        .challenges {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-left: 4px solid #1e90ff;
+            margin: 20px 0;
+        }
+
+        .statistics {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f1f9ff;
+            border-left: 4px solid #0078d7;
+        }
+
+        .statistics h2 {
+            margin-bottom: 15px;
+        }
+
+        .statistics p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Centralized Client Database</h1>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h1>About the Project</h1>
+            <p>
+                The Centralized Client Database project was developed to unify client data across multiple verticals at Kunvarji Group, 
+                including Real Estate Advisors, Wealth Solutions, Agro Solutions, and more. With a focus on streamlining operations, 
+                the project enabled the organization to track and manage client information in a single system, improving data visibility 
+                and creating opportunities for cross-selling between verticals.
+            </p>
+
+            <p>
+                This initiative began with extensive data normalization due to inconsistencies in client details spread across multiple servers 
+                and databases. After normalization, the data was consolidated into a unified SQL view, enabling accurate and actionable analysis 
+                for various stakeholders.
+            </p>
+
+            <h2>Key Features</h2>
+            <ul>
+                <li>Data consolidation across multiple business verticals.</li>
+                <li>SQL view development with conditional columns for client status tracking.</li>
+                <li>Automated stored procedures to refresh data daily for Power BI dashboards.</li>
+                <li>Advanced client mapping using soundex functions, achieving 97% data accuracy.</li>
+                <li>Enhanced cross-selling by identifying common clients across business units.</li>
+            </ul>
+
+            <div class="images-section">
+                <img src="images/vos8lRMO_a.png" alt="Dashboard Example 1">
+                <img src="images/proj_2.jpg" alt="Dashboard Example 2">
+            </div>
+            <p class="reference-note">Above images are for reference purposes only.</p>
+
+            <h2>Challenges Faced</h2>
+            <div class="challenges">
+                <p>
+                    One of the significant challenges was identifying client existence across verticals due to inconsistent data formats and 
+                    the absence of unique identifiers in some verticals. For instance, mobile numbers were often the only common data point, 
+                    but duplicates and variations in names complicated the mapping process.
+                </p>
+                <p>
+                    To address these issues, soundex functions and advanced SQL techniques were used to normalize data and achieve a mapping 
+                    accuracy of 97%. This ensured reliable and actionable insights while minimizing errors.
+                </p>
+            </div>
+
+            <h2>Results and Impact</h2>
+            <div class="statistics">
+                <h2>Key Achievements:</h2>
+                <p><strong>Data Accuracy:</strong> Achieved 97% accuracy in mapping client data across verticals.</p>
+                <p><strong>Efficiency Gains:</strong> Improved data retrieval times by avoiding direct database querying.</p>
+                <p><strong>Cross-Selling Impact:</strong> Enhanced cross-vertical business opportunities through consolidated client visibility.</p>
+            </div>
+
+            <h2>Technology Stack</h2>
+            <ul>
+                <li><strong>Database:</strong> SQL Server (Views, Stored Procedures)</li>
+                <li><strong>Visualization:</strong> Power BI (Dynamic KPIs and interactive filters)</li>
+                <li><strong>Programming:</strong> Advanced SQL Functions (e.g., soundex) & Queries</li>
+            </ul>
+
+            <p>
+                The Centralized Client Database has become a cornerstone for Kunvarji Group's data-driven decision-making, empowering the 
+                business to leverage insights effectively and improve operational efficiency across all verticals.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Portfolio | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

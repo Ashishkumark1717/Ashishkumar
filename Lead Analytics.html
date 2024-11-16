@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Lead Analytics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #1e90ff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .images-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .images-section img {
+            width: calc(50% - 10px);
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .reference-note {
+            font-style: italic;
+            color: #666;
+            font-size: 14px;
+            text-align: center;
+            margin-top: -10px;
+        }
+
+        footer {
+            background-color: #1e90ff;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        .challenges {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-left: 4px solid #1e90ff;
+            margin: 20px 0;
+        }
+
+        .statistics {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f1f9ff;
+            border-left: 4px solid #0078d7;
+        }
+
+        .statistics h2 {
+            margin-bottom: 15px;
+        }
+
+        .statistics p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lead Analytics</h1>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h1>About the Project</h1>
+            <p>
+                The Lead Analytics project focuses on analyzing and optimizing lead generation for Kunvarji Real Estate. 
+                By tracking the source of leads, cost per lead, and conversion metrics, the project provides actionable insights 
+                to improve marketing efficiency and return on investment.
+            </p>
+
+            <p>
+                This project consolidates manually entered lead data from the marketing team and processes it in real-time 
+                to create a dynamic Power BI dashboard. The dashboard helps visualize key metrics and evaluate the performance 
+                of marketing campaigns across different projects.
+            </p>
+
+            <h2>Key Features</h2>
+            <ul>
+                <li>Real-time data synchronization with the Power BI dashboard.</li>
+                <li>Key metrics such as Cost Per Lead (CPL), Cost Per Converted Lead, and Margin.</li>
+                <li>Visualization of total spending, returns, and project-wise performance.</li>
+                <li>Interactive slicers for filtering by project, lead source, and other dimensions.</li>
+            </ul>
+
+            <h2>Challenges</h2>
+            <div class="challenges">
+                <p>
+                    One major challenge was ensuring data accuracy and consistency, as the data was manually entered by multiple users. 
+                    To address this, rigorous data validation techniques were implemented, resulting in a 99% accuracy rate. 
+                    Additionally, varying formats of lead source information required normalization for accurate analysis.
+                </p>
+            </div>
+
+            <h2>Results and Impact</h2>
+            <div class="statistics">
+                <h2>Impact Highlights</h2>
+                <p><strong>99% Data Accuracy:</strong> Improved accuracy through normalization and validation processes.</p>
+                <p><strong>20% Increase in Marketing Performance:</strong> Enhanced decision-making with actionable insights from KPIs.</p>
+                <p><strong>Cost Optimization:</strong> Reduced cost per lead and improved margin tracking across projects.</p>
+            </div>
+            <h2>Technology Stack</h2>
+            <ul>
+                <li><strong>Tool:</strong> Google Sheets</li>
+                <li><strong>Visualization:</strong> Power BI (Dynamic KPIs and interactive filters) & DAX</li>
+                <!-- <li><strong>:</strong> Advanced SQL Functions (e.g., soundex)</li> -->
+            </ul>
+
+            <p>
+                The Lead Analytics system has transformed how Kunvarji Real Estate tracks and manages its 
+                marketing efforts. By analyzing lead sources,cost per lead, and conversion rates, 
+                the dashboard empowers the marketing team with insights to optimize spending, 
+                improve marketing strategies, and increase the return on investment, boosting the 
+                overall efficiency of lead generation processes.
+            </p>
+            <h2>Images</h2>
+            <div class="images-section">
+                <img src="images/Project-Leads.png" alt="Lead Analytics Dashboard">
+                <img src="images/proj_4.jpg" alt="Lead Analytics Metrics">
+            </div>
+            <p class="reference-note">*Above images are just for reference purposes.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Kunvarji Group | Lead Analytics Project</p>
+    </footer>
+</body>
+</html>
